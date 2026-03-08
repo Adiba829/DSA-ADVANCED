@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     int t;
-    cin >> t;   // number of test cases
+    cin >> t;
 
     while(t--) {
         int n;
@@ -12,7 +12,6 @@ int main() {
 
         vector<vector<int>> grid(n, vector<int>(n));
 
-        // Input grid
         for(int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
                 cin >> grid[i][j];
@@ -21,7 +20,6 @@ int main() {
 
         vector<int> zeros(n);
 
-        // Step 1: count trailing zeros
         for (int i = 0; i < n; i++) {
             int count = 0;
             for (int j = n - 1; j >= 0 && grid[i][j] == 0; j--) {
@@ -33,7 +31,6 @@ int main() {
         int swaps = 0;
         bool possible = true;
 
-        // Step 2: greedy placement
         for (int i = 0; i < n; i++) {
             int required = n - i - 1;
             int j = i;
