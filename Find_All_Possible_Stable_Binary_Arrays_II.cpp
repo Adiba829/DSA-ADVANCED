@@ -49,4 +49,8 @@ int main() {
     cout << numberOfStableArrays(zero, one, limit);
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 77f8565a05a3e9b307013f22823b037b0e9aa6eb
